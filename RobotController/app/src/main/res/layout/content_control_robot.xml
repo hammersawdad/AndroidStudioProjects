@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_control_robot"
+    tools:context="com.gtillett.robots.robotcontroller.ControlRobotActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50px">
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:indeterminate="false"
+            android:max="100"
+            android:layout_column="0"
+            android:layout_span="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/initializationButton"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:text="Init"
+            android:onClick="initializeButton_onClick"
+            android:layout_column="0" />
+
+
+        <Button
+            android:id="@+id/onButton"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:text="@string/turnOn"
+            android:onClick="sendBluetoothDataOn"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/offButton"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:text="@string/turnOff"
+            android:onClick="sendBluetoothDataOff"
+            android:layout_column="2" />
+
+    </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fwd"
+                android:onClick="moveForward"
+                android:id="@+id/forwardButton"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:onClick="moveBackward"
+                android:id="@+id/backwardButton"
+                android:layout_marginEnd="30dp"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:onClick="moveStop"
+                android:id="@+id/stopButton"
+
+                android:layout_marginEnd="114dp"
+                android:layout_column="2" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50px">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Text"
+                android:layout_column="0"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</RelativeLayout>

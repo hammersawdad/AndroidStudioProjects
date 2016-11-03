@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HelloWorldOne</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_other">Other</string>
+    <string name="action_exit">Exit</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="title_activity_blue_controller">BlueControllerActivity</string>
+
+<!--
+    <string name="app_name">BluetoothTest</string>
+    <string name="action_settings">Settings</string>
+-->
+    <string name="Text">Status: -</string>
+    <string name="on">Turn On</string>
+    <string name="off">Turn Off</string>
+    <string name="List">List paired Devices</string>
+    <string name="Find">Search new Devices / Cancel</string>
+
+    <string name="blueToothController_start">Blue Tooth</string>
+    <string name="sendButton">Send Bluetooth Data</string>
+
+</resources>
